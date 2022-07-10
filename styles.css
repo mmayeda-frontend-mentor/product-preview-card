@@ -41,7 +41,7 @@ body {
   width: 100%;
 }
 
-.preview-card h2 {
+.preview-card h1 {
   font-size: 0.8rem;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
@@ -50,7 +50,7 @@ body {
   flex-grow: 0;
 }
 
-.preview-card h3 {
+.preview-card h2 {
   font-size: 1.75rem;
   font-family: 'Fraunces', serif;
   color: var(--color-neutral-dark-blue);
