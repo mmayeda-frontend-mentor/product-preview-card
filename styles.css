@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?&family=Fraunces:opsz,wght@9..144,700&display=swap');
+
 :root {
   --color-primary-cream: hsl(30, 38%, 92%);
   --color-primary-cyan-dark: hsl(158, 36%, 37%);
@@ -18,6 +21,20 @@ body {
   background-color: var(--color-primary-cream);
 }
 
+h1 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.4em;
+  color: var(--color-neutral-grayish-blue);
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-family: 'Fraunces', serif;
+  color: var(--color-neutral-dark-blue);
+}
+
 .preview-cards-container {
   display: flex;
   justify-content: center;
@@ -27,8 +44,6 @@ body {
 
 .preview-card {
   max-width: 335px;
-  display: flex;
-  flex-direction: column;
   background-color: var(--color-neutral-white);
   border-radius: 10px;
   overflow: hidden;
@@ -37,6 +52,56 @@ body {
 .preview-card img {
   display: block;
   width: 100%;
+}
+
+.preview-card-content {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  gap: 0.9rem;
+}
+
+.preview-card-description {
+  font-size: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-neutral-grayish-blue);
+  line-height: 1.4rem;
+}
+
+.preview-card-price-container {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.preview-card-price {
+  color: var(--color-primary-cyan-dark);
+  font-family: 'Fraunces', serif;
+  font-size: 1.75rem;
+  flex-grow: 0.15;
+}
+
+.preview-card-original-price {
+  font-size: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-neutral-grayish-blue);
+  flex-grow: 0.85;
+  text-decoration: line-through;
+}
+
+.preview-card button {
+  background: var(--color-primary-cyan-dark);
+  color: var(--color-neutral-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  padding: 1em;
+  gap: 0.75em;
 }
 
 .attribution {
